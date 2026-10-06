@@ -1,0 +1,30 @@
+[
+  {
+    "package": "gsap",
+    "version": "3.15.0",
+    "url": "https://registry.npmjs.org/gsap/-/gsap-3.15.0.tgz",
+    "integrity": "sha512-dMW4CWBTUK1AEEDeZc1g4xpPGIrSf9fJF960qbTZmN/QwZIWY5wgliS6JWl9/25fpTGJrMRtSjGtOmPnfjZB+A==",
+    "files": {
+      "package/dist/gsap.min.js": "assets/vendor/gsap.min.js",
+      "package/dist/ScrollTrigger.min.js": "assets/vendor/ScrollTrigger.min.js"
+    }
+  },
+  {
+    "package": "fflate",
+    "version": "0.8.3",
+    "url": "https://registry.npmjs.org/fflate/-/fflate-0.8.3.tgz",
+    "integrity": "sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==",
+    "files": {
+      "package/umd/index.js": "assets/vendor/fflate.min.js"
+    }
+  },
+  {
+    "package": "vazirmatn",
+    "version": "33.0.3",
+    "url": "https://registry.npmjs.org/vazirmatn/-/vazirmatn-33.0.3.tgz",
+    "integrity": "sha512-fbjNc0CMjazZpIegWzz9OHGzI1APFboT+x7ZecXlUCtDe/nkyx7gtCTZnWS/+eeXG7fbfXymCPKJI8EsnM3iqw==",
+    "files": {
+      "package/misc/Non-Latin/fonts/webfonts/Vazirmatn-NL[wght].woff2": "assets/fonts/Vazirmatn.woff2"
+    }
+  }
+]
