@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="پیش‌نمایش رابط فارسی VisionGuard Pro، از نمونه‌کارهای محمد متین خوارزمی. داده‌ها نمایشی هستند.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionGuard Pro | پیش‌نمایش نمونه‌کار محمد متین خوارزمی</title>
+    
+    <!-- Fonts -->
+    
+    <!-- FontAwesome Icons -->
+    
+    <!-- Face-API -->
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Animations CSS -->
+    <style>
+        @keyframes gradientFloat {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(-20px, -10px) rotate(1deg); }
+            50% { transform: translate(15px, -20px) rotate(-1deg); }
+            75% { transform: translate(-10px, 15px) rotate(1deg); }
+        }
+
+        @keyframes particleAIFloat {
+            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.7; }
+            50% { transform: translateY(-100vh) translateX(50px) scale(1.2); opacity: 1; }
+            100% { transform: translateY(-100vh) translateX(-30px) scale(0.8); opacity: 0; }
+        }
+
+        @keyframes meshMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(40px, 40px); }
+        }
+
+        @keyframes neuronPulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+
+        @keyframes aiPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.7; }
+        }
+
+        @keyframes statusPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes motionPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        @keyframes iconFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+
+        @keyframes badgeBounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        @keyframes slideInUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulseRing {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+
+        @keyframes recordingPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @keyframes connectionPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <a class="preview-skip" href="#previewMain">پرش به محتوای اصلی</a>
+    <aside class="preview-banner" aria-label="وضعیت نمایش">
+        <a href="../../work.html">↗ بازگشت به نمونه‌کارها</a>
+        <span><strong>پیش‌نمایش رابط — دادهٔ نمایشی</strong><small>طراحی اصلی پروژه؛ بدون دسترسی به دوربین، صدا یا ارسال رسانه</small></span>
+    </aside>
+    <!-- Background Container -->
+    <div class="bg-container">
+        <div class="bg-gradient-advanced"></div>
+        <div class="bg-particles-ai" id="bgParticlesAI"></div>
+        <div class="bg-neural-mesh"></div>
+        <canvas class="bg-neural-canvas" id="bgNeuralCanvas"></canvas>
+    </div>
+
+    <!-- AI Loader -->
+    <div class="ai-loader hidden" id="aiLoader" aria-hidden="true">
+        <div class="neural-network">
+            <div class="neuron"></div>
+            <div class="neuron"></div>
+            <div class="neuron"></div>
+            <div class="neuron"></div>
+            <div class="neuron"></div>
+        </div>
+        
+        <p class="ai-title">VisionGuard Pro</p>
+        <p class="ai-subtitle">سیستم نظارت هوشمند با AI پیشرفته</p>
+        
+        <div class="progress-neural">
+            <div class="progress-fill-neural" id="progressFillNeural"></div>
+        </div>
+        
+        <div class="loading-status">
+            <span id="loadingText">بارگذاری هسته هوش مصنوعی...</span>
+            <span id="loadingPercent">0%</span>
+        </div>
+    </div>
+
+    <!-- App Container -->
+    <div class="app-container" id="appContainer">
+        <!-- Enhanced Navigation -->
+        <nav class="navbar-advanced">
+            <div class="nav-content-advanced">
+                <!-- Brand -->
+                <div class="nav-brand-advanced">
+                    <div class="brand-icon-advanced">
+                        <div class="icon-layers">
+                            <span class="fas fa-eye layer-1 preview-glyph" aria-hidden="true">◉</span>
+                            <span class="fas fa-brain layer-2 preview-glyph" aria-hidden="true">✦</span>
+                            <span class="fas fa-shield-alt layer-3 preview-glyph" aria-hidden="true">◇</span>
+                        </div>
+                    </div>
+                    <div class="brand-info-advanced">
+                        <div class="brand-name-advanced">VisionGuard Pro</div>
+                        <div class="brand-tag-advanced">INTERFACE PREVIEW</div>
+                        <div class="ai-status">
+                            <div class="ai-indicator" id="aiIndicator"></div>
+                            <span>رابط نمایشی</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Panel -->
+                <div class="nav-center-advanced">
+                    <!-- System Status -->
+                    <div class="status-panel">
+                        <div class="status-item">
+                            <div class="status-dot-advanced" id="statusDotAdvanced"></div>
+                            <span class="status-text-advanced" id="statusTextAdvanced">آماده</span>
+                        </div>
+                        
+                        <div class="connection-status">
+                            <div class="connection-item">
+                                <span class="fab fa-telegram-plane preview-glyph" aria-hidden="true">↗</span>
+                                <span id="telegramConnection">غیرفعال</span>
+                            </div>
+                            <div class="connection-item">
+                                <span class="fas fa-comments preview-glyph" aria-hidden="true">◌</span>
+                                <span id="baleConnection">غیرفعال</span>
+                            </div>
+                        </div>
+                        
+                        <div class="system-metrics">
+                            <div class="metric-item">
+                                <span class="fas fa-microchip preview-glyph" aria-hidden="true">▦</span>
+                                <span id="cpuUsage">—</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="fas fa-memory preview-glyph" aria-hidden="true">▤</span>
+                                <span id="memoryUsage">—</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Time Display -->
+                    <div class="time-display-advanced" id="timeDisplayAdvanced">00:00:00</div>
+                </div>
+
+                <!-- Actions -->
+                <div class="nav-actions-advanced"><button type="button" class="nav-btn-advanced" id="previewTheme" aria-pressed="false"><span aria-hidden="true">◐</span><span class="btn-label">رنگ روشن</span></button>
+                    <button type="button" class="nav-btn-advanced" id="liveStreamBtn">
+                        <span class="fas fa-broadcast-tower preview-glyph" aria-hidden="true">◎</span>
+                        <span class="btn-label">داشبورد</span>
+                    </button>
+                    
+                    <button type="button" class="nav-btn-advanced" id="analyticsBtn">
+                        <span class="fas fa-chart-line preview-glyph" aria-hidden="true">↗</span>
+                        <span class="btn-label">تحلیلات</span>
+                    </button>
+                    
+                    <button type="button" class="nav-btn-advanced" id="alertsAdvancedBtn">
+                        <span class="fas fa-bell preview-glyph" aria-hidden="true">♧</span>
+                        <span class="btn-label">هشدارها</span>
+                        <div class="notification-badge-advanced" id="notificationBadgeAdvanced">0</div>
+                    </button>
+                    
+                    <button type="button" class="nav-btn-advanced" id="settingsAdvancedBtn">
+                        <span class="fas fa-cog preview-glyph" aria-hidden="true">⚙</span>
+                        <span class="btn-label">تنظیمات</span>
+                    </button>
+                    
+                    <button type="button" class="nav-btn-advanced" id="fullscreenAdvancedBtn">
+                        <span class="fas fa-expand preview-glyph" aria-hidden="true">⤢</span>
+                        <span class="btn-label">تمام صفحه</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content-advanced" id="previewMain" tabindex="-1">
+            <!-- Setup Page -->
+            <div class="page setup-page-advanced" id="setupPageAdvanced">
+                <div class="setup-container-advanced">
+                    <!-- Header -->
+                    <div class="setup-header-advanced">
+                        <div class="setup-icon-advanced">
+                            <div class="icon-animation">
+                                <span class="fas fa-robot preview-glyph" aria-hidden="true">✦</span>
+                            </div>
+                            <div class="pulse-rings">
+                                <div class="pulse-ring"></div>
+                                <div class="pulse-ring"></div>
+                                <div class="pulse-ring"></div>
+                            </div>
+                        </div>
+                        <h1 class="setup-title-advanced">تنظیمات سیستم نظارت هوشمند</h1>
+                        <p class="setup-description-advanced">
+                            پیش‌نمایش طراحی یک داشبورد فارسی برای نظارت. تنظیمات و بخش‌های رابط را بررسی کنید؛ رسانه و مدل هوش مصنوعی در این نسخه اجرا نمی‌شوند.
+                        </p>
+                    </div>
+
+                    <!-- Settings Content -->
+                    <div class="setup-content-advanced">
+                        <!-- Camera & AI Settings -->
+                        <div class="setting-group-advanced">
+                            <h3 class="group-title-advanced">
+                                <span class="fas fa-camera preview-glyph" aria-hidden="true">▣</span>
+                                تنظیمات دوربین و هوش مصنوعی
+                            </h3>
+                            
+                            <div class="camera-ai-grid">
+                                <div class="camera-selection-advanced">
+                                    <h4>انتخاب دوربین</h4>
+                                    <div class="camera-options-advanced">
+                                        <button type="button" class="camera-option-advanced active" id="backCameraAdvanced" aria-pressed="true">
+                                            <span class="option-icon-advanced">
+                                                <span class="fas fa-camera preview-glyph" aria-hidden="true">▣</span>
+                                            </span>
+                                            <span class="option-label-advanced">دوربین عقب</span>
+                                            <span class="option-indicator-advanced" aria-hidden="true"></span></button>
+                                        
+                                        <button type="button" class="camera-option-advanced" id="frontCameraAdvanced" aria-pressed="false">
+                                            <span class="option-icon-advanced">
+                                                <span class="fas fa-camera-retro preview-glyph" aria-hidden="true">▣</span>
+                                            </span>
+                                            <span class="option-label-advanced">دوربین جلو</span>
+                                            <span class="option-indicator-advanced" aria-hidden="true"></span></button>
+                                    </div>
+                                </div>
+
+                                <div class="ai-features">
+                                    <h4>قابلیت‌های هوش مصنوعی</h4>
+                                    <div class="ai-toggles">
+                                        <div class="ai-toggle">
+                                            <label for="faceDetection">تشخیص چهره</label>
+                                            <div class="toggle-switch-advanced">
+                                                <input type="checkbox" id="faceDetection">
+                                                <label for="faceDetection" class="toggle-label-advanced">
+                                                    <span class="toggle-slider-advanced"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="ai-toggle">
+                                            <label for="audioRecording">ضبط صدا</label>
+                                            <div class="toggle-switch-advanced">
+                                                <input type="checkbox" id="audioRecording">
+                                                <label for="audioRecording" class="toggle-label-advanced">
+                                                    <span class="toggle-slider-advanced"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="ai-toggle">
+                                            <label for="nightVision">حالت شب</label>
+                                            <div class="toggle-switch-advanced">
+                                                <input type="checkbox" id="nightVision">
+                                                <label for="nightVision" class="toggle-label-advanced">
+                                                    <span class="toggle-slider-advanced"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="ai-toggle">
+                                            <label for="motionTracking">دنبال کردن حرکت</label>
+                                            <div class="toggle-switch-advanced">
+                                                <input type="checkbox" id="motionTracking" checked>
+                                                <label for="motionTracking" class="toggle-label-advanced">
+                                                    <span class="toggle-slider-advanced"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detection Settings -->
+                        <div class="setting-group-advanced">
+                            <h3 class="group-title-advanced">
+                                <span class="fas fa-crosshairs preview-glyph" aria-hidden="true">⊕</span>
+                                تنظیمات تشخیص
+                            </h3>
+                            
+                            <div class="detection-grid">
+                                <div class="sensitivity-container-advanced">
+                                    <div class="sensitivity-header-advanced">
+                                        <span>حساسیت تشخیص حرکت</span>
+                                        <span class="sensitivity-value-advanced" id="sensitivityValueAdvanced">65%</span>
+                                    </div>
+                                    <div class="slider-container-advanced">
+                                        <input type="range" class="sensitivity-slider-advanced" id="sensitivitySliderAdvanced" aria-label="حساسیت تشخیص حرکت در رابط نمایشی" dir="ltr" min="10" max="100" value="65">
+                                        <div class="slider-track-advanced">
+                                            <div class="slider-fill-advanced" id="sliderFillAdvanced"></div>
+                                        </div>
+                                        <div class="slider-thumb-advanced" id="sliderThumbAdvanced"></div>
+                                    </div>
+                                </div>
+
+                                <div class="sensitivity-container-advanced">
+                                    <div class="sensitivity-header-advanced">
+                                        <span>حساسیت تشخیص چهره</span>
+                                        <span class="sensitivity-value-advanced" id="faceThresholdValue">80%</span>
+                                    </div>
+                                    <div class="slider-container-advanced">
+                                        <input type="range" class="sensitivity-slider-advanced" id="faceThresholdSlider" aria-label="حساسیت تشخیص چهره در رابط نمایشی" dir="ltr" min="30" max="100" value="80">
+                                        <div class="slider-track-advanced">
+                                            <div class="slider-fill-advanced" id="faceSliderFill"></div>
+                                        </div>
+                                        <div class="slider-thumb-advanced" id="faceSliderThumb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Communication Settings -->
+                        <div class="setting-group-advanced">
+                            <h3 class="group-title-advanced">
+                                <span class="fas fa-paper-plane preview-glyph" aria-hidden="true">↗</span>
+                                تنظیمات ارتباطات
+                            </h3>
+                            
+                            <div class="communication-grid">
+                                <div class="platform-settings">
+                                    <h4><span class="fab fa-telegram-plane preview-glyph" aria-hidden="true">↗</span> تلگرام</h4>
+                                    <div class="platform-config">
+                                        <div class="platform-status">
+                                            <div class="connection-dot telegram"></div>
+                                            <span id="telegramStatusText">غیرفعال در پیش‌نمایش</span>
+                                        </div>
+                                        <div class="ai-toggle">
+                                            <label for="telegramEnabled">اتصال تلگرام در نسخهٔ اصلی</label>
+                                            <div class="toggle-switch-advanced">
+                                                <input type="checkbox" id="telegramEnabled" disabled>
+                                                <label for="telegramEnabled" class="toggle-label-advanced">
+                                                    <span class="toggle-slider-advanced"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="platform-settings">
+                                    <h4><span class="fas fa-comments preview-glyph" aria-hidden="true">◌</span> بله</h4>
+                                    <div class="platform-config">
+                                        <div class="platform-status">
+                                            <div class="connection-dot bale"></div>
+                                            <span id="baleStatusText">غیرفعال در پیش‌نمایش</span>
+                                        </div>
+                                        <div class="ai-toggle">
+                                            <label for="baleEnabled">اتصال بله در نسخهٔ اصلی</label>
+                                            <div class="toggle-switch-advanced">
+                                                <input type="checkbox" id="baleEnabled" disabled>
+                                                <label for="baleEnabled" class="toggle-label-advanced">
+                                                    <span class="toggle-slider-advanced"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Start Button -->
+                        <div class="start-section-advanced">
+                            <button type="button" class="start-btn-advanced" id="startBtnAdvanced">
+                                <div class="btn-content">
+                                    <span class="fas fa-rocket btn-icon-advanced preview-glyph" aria-hidden="true">↗</span>
+                                    <span class="btn-text-advanced">مشاهده داشبورد نمایشی</span>
+                                </div>
+                                <div class="btn-glow-advanced"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitoring Page -->
+            <div class="page monitoring-page-advanced hidden" id="monitoringPageAdvanced">
+                <div class="monitoring-layout-advanced">
+                    <!-- Video Section -->
+                    <div class="video-section-advanced">
+                        <div class="video-header-advanced">
+                            <div class="video-info-advanced">
+                                <h2 class="preview-monitor-title">داشبورد نمایشی</h2>
+                                <div class="status-badges-advanced">
+                                    <div class="badge-advanced success" id="cameraStatusAdvanced">بدون ورودی دوربین</div>
+                                    <div class="badge-advanced info" id="aiStatusBadge">مدل اجرا نمی‌شود</div>
+                                    <div class="recording-badge-advanced hidden" id="recordingBadgeAdvanced">
+                                        <span class="pulse"></span>
+                                        بدون ضبط
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-container-advanced">
+                            <div class="preview-signal" id="videoElementAdvanced" role="img" aria-label="قاب خالی دوربین؛ هیچ تصویر واقعی دریافت نمی‌شود">
+    <div class="preview-signal-frame" aria-hidden="true"><span>＋</span></div>
+    <p>قاب نمایشی دوربین</p><small>بدون تصویر زنده، عکس یا ضبط صدا</small><b id="previewCameraLabel">نمای دوربین عقب</b>
+</div>
+                            
+                            <!-- Overlays -->
+                            <canvas class="motion-canvas-advanced" id="motionCanvasAdvanced"></canvas>
+                            <canvas class="face-canvas" id="faceCanvas"></canvas>
+                            
+                            <!-- Motion Overlay -->
+                            <div class="motion-overlay-advanced" id="motionOverlayAdvanced">
+                                <div class="motion-indicator">
+                                    <span class="fas fa-running preview-glyph" aria-hidden="true">↗</span>
+                                    <span>حرکت تشخیص داده شد!</span>
+                                </div>
+                            </div>
+
+                            <!-- Face Detection Overlay -->
+                            <div class="face-detection-overlay" id="faceDetectionOverlay">
+                                <div class="face-info">
+                                    <span class="fas fa-user-friends preview-glyph" aria-hidden="true">♧</span>
+                                    <span>چهره شناسایی شد</span>
+                                </div>
+                            </div>
+
+                            <!-- Detection Zones -->
+                            <div class="detection-zones-advanced" id="detectionZonesAdvanced">
+                                <div class="zone-grid-advanced" id="zoneGridAdvanced"></div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="video-controls-advanced">
+                            <button type="button" class="control-btn-advanced" id="switchCameraAdvancedBtn">
+                                <span class="fas fa-sync-alt preview-glyph" aria-hidden="true">↻</span>
+                                <span>تغییر نمای دوربین</span>
+                            </button>
+                            
+                            <button type="button" class="control-btn-advanced" id="captureAdvancedBtn">
+                                <span class="fas fa-camera preview-glyph" aria-hidden="true">▣</span>
+                                <span>عکس‌برداری</span>
+                            </button>
+                            
+                            <button type="button" class="control-btn-advanced" id="recordAudioBtn">
+                                <span class="fas fa-microphone preview-glyph" aria-hidden="true">♩</span>
+                                <span>ضبط صدا</span>
+                            </button>
+                            
+                            <button type="button" class="control-btn-advanced" id="nightVisionBtn">
+                                <span class="fas fa-moon preview-glyph" aria-hidden="true">◐</span>
+                                <span>حالت شب</span>
+                            </button>
+                            
+                            <button type="button" class="control-btn-advanced danger" id="stopAdvancedBtn">
+                                <span class="fas fa-stop preview-glyph" aria-hidden="true">■</span>
+                                <span>بازگشت به تنظیمات</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Info Panel -->
+                    <div class="info-panel-advanced">
+                        <!-- Alerts -->
+                        <div class="alert-panel-advanced">
+                            <div class="detection-alert-advanced" id="detectionAlertAdvanced">
+                                <div class="alert-icon-advanced">
+                                    <span class="fas fa-exclamation-triangle preview-glyph" aria-hidden="true">△</span>
+                                </div>
+                                <div class="alert-content-advanced">
+                                    <div class="alert-title-advanced">تشخیص حرکت</div>
+                                    <div class="alert-details-advanced" id="alertDetailsAdvanced">سطح فعالیت: 85%</div>
+                                    <div class="alert-time-advanced" id="alertTimeAdvanced">12:34:56</div>
+                                </div>
+                            </div>
+
+                            <div class="face-alert" id="faceAlert">
+                                <div class="face-alert-content">
+                                    <span class="fas fa-user preview-glyph" aria-hidden="true">◇</span>
+                                    <span id="faceCount">1 نفر</span>
+                                    <small>تشخیص داده شد</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Audio Visualizer -->
+                        <div class="audio-visualizer" id="audioVisualizer">
+                            <div class="audio-header">
+                                <span class="fas fa-volume-up preview-glyph" aria-hidden="true">♪</span>
+                                <span>تحلیل صوتی</span>
+                                <span class="audio-level" id="audioLevel">-∞ dB</span>
+                            </div>
+                            <canvas class="audio-canvas" id="audioCanvas" width="300" height="100"></canvas>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="metrics-panel-advanced">
+                            <div class="metric-advanced">
+                                <div class="metric-icon-advanced">
+                                    <span class="fas fa-running preview-glyph" aria-hidden="true">↗</span>
+                                </div>
+                                <div class="metric-info-advanced">
+                                    <span class="metric-label-advanced">شدت حرکت</span>
+                                    <span class="metric-value-advanced" id="motionIntensity">0%</span>
+                                </div>
+                            </div>
+
+                            <div class="metric-advanced">
+                                <div class="metric-icon-advanced">
+                                    <span class="fas fa-users preview-glyph" aria-hidden="true">♧</span>
+                                </div>
+                                <div class="metric-info-advanced">
+                                    <span class="metric-label-advanced">تعداد چهره</span>
+                                    <span class="metric-value-advanced" id="faceCountMetric">0</span>
+                                </div>
+                            </div>
+
+                            <div class="metric-advanced">
+                                <div class="metric-icon-advanced">
+                                    <span class="fas fa-volume-up preview-glyph" aria-hidden="true">♪</span>
+                                </div>
+                                <div class="metric-info-advanced">
+                                    <span class="metric-label-advanced">سطح صدا</span>
+                                    <span class="metric-value-advanced" id="audioLevelMetric">—</span>
+                                </div>
+                            </div>
+
+                            <div class="metric-advanced">
+                                <div class="metric-icon-advanced">
+                                    <span class="fas fa-brain preview-glyph" aria-hidden="true">✦</span>
+                                </div>
+                                <div class="metric-info-advanced">
+                                    <span class="metric-label-advanced">مدل هوش مصنوعی</span>
+                                    <span class="metric-value-advanced" id="aiConfidence">—</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Statistics -->
+                        <div class="stats-panel-advanced">
+                            <div class="stat-item-advanced">
+                                <span class="fas fa-clock preview-glyph" aria-hidden="true">◷</span>
+                                <span>مدت پیش‌نمایش:</span>
+                                <span id="uptimeCounterAdvanced">00:00:00</span>
+                            </div>
+                            
+                            <div class="stat-item-advanced">
+                                <span class="fas fa-eye preview-glyph" aria-hidden="true">◉</span>
+                                <span>تعداد تشخیص:</span>
+                                <span id="detectionCountAdvanced">0</span>
+                            </div>
+                            
+                            <div class="stat-item-advanced">
+                                <span class="fas fa-camera preview-glyph" aria-hidden="true">▣</span>
+                                <span>عکس‌های گرفته شده:</span>
+                                <span id="photoCountAdvanced">0</span>
+                            </div>
+                            
+                            <div class="stat-item-advanced">
+                                <span class="fas fa-microphone preview-glyph" aria-hidden="true">♩</span>
+                                <span>فایل‌های صوتی:</span>
+                                <span id="audioFileCount">0</span>
+                            </div>
+                        </div>
+
+                        <!-- Gallery -->
+                        <div class="gallery-section-advanced">
+                            <div class="gallery-header-advanced">
+                                <h3>گالری رسانه <span class="media-counter-advanced" id="mediaCounterAdvanced">(0)</span></h3>
+                                <div class="gallery-tabs-advanced">
+                                    <button type="button" class="tab-btn-advanced active" id="photosTab">
+                                        <span class="fas fa-images preview-glyph" aria-hidden="true">▧</span>
+                                        تصاویر <span id="photoTabCount">0</span>
+                                    </button>
+                                    <button type="button" class="tab-btn-advanced" id="audioTab">
+                                        <span class="fas fa-music preview-glyph" aria-hidden="true">♪</span>
+                                        صدا <span id="audioTabCount">0</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="gallery-content-advanced">
+                                <div class="tab-panel-advanced active" id="photosPanel">
+                                    <div class="gallery-grid-advanced" id="galleryGridAdvanced">
+                                        <div class="empty-gallery-advanced">
+                                            <span class="fas fa-images preview-glyph" aria-hidden="true">▧</span>
+                                            <div>هنوز تصویری ثبت نشده</div>
+                                            <small>در این پیش‌نمایش تصویری دریافت یا ثبت نمی‌شود</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-panel-advanced" id="audioPanel">
+                                    <div class="audio-list" id="audioList">
+                                        <div class="empty-audio">
+                                            <span class="fas fa-microphone preview-glyph" aria-hidden="true">♩</span>
+                                            <div>فایل صوتی وجود ندارد</div>
+                                            <small>در این پیش‌نمایش صدایی دریافت یا ضبط نمی‌شود</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-actions-advanced">
+                                <button type="button" class="action-btn-advanced" id="downloadAllAdvancedBtn" disabled title="گالری پیش‌نمایش خالی است">
+                                    <span class="fas fa-download preview-glyph" aria-hidden="true">↓</span>
+                                    دانلود همه
+                                </button>
+                                <button type="button" class="action-btn-advanced" id="shareAdvancedBtn">
+                                    <span class="fas fa-share preview-glyph" aria-hidden="true">↗</span>
+                                    درباره پروژه
+                                </button>
+                                <button type="button" class="action-btn-advanced danger" id="clearGalleryAdvancedBtn">
+                                    <span class="fas fa-trash preview-glyph" aria-hidden="true">×</span>
+                                    پاک کردن
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Settings Modal -->
+    <dialog class="modal-advanced" id="settingsModalAdvanced" aria-labelledby="settingsDialogTitle">
+        <div class="modal-content-advanced">
+            <div class="modal-header-advanced">
+                <h2 id="settingsDialogTitle">تنظیمات پیش‌نمایش</h2>
+                <button type="button" class="close-btn-advanced" id="closeSettingsModalAdvanced" aria-label="بستن تنظیمات">
+                    <span class="fas fa-times preview-glyph" aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <div class="modal-body-advanced">
+                <div class="settings-tabs-advanced">
+                    <button type="button" class="tab-btn-advanced active" data-tab="messenger">ارتباطات</button>
+                    <button type="button" class="tab-btn-advanced" data-tab="ai">هوش مصنوعی</button>
+                    <button type="button" class="tab-btn-advanced" data-tab="advanced">پیشرفته</button>
+                </div>
+
+                <div class="settings-content-advanced">
+                    <div class="tab-panel-advanced active" id="messengerPanel">
+                        <div class="setting-section-advanced"><h3>ارتباطات در طراحی پروژه</h3><p>بخش‌های تلگرام و بله در رابط اصلی طراحی شده‌اند. پیش‌نمایش عمومی به سرویس پیام‌رسان وصل نمی‌شود و هیچ اطلاعات اتصال دریافت نمی‌کند.</p></div>
+                    </div>
+
+                    <!-- AI Settings -->
+                    <div class="tab-panel-advanced" id="aiPanel">
+                        <div class="setting-section-advanced">
+                            <h3><span class="fas fa-robot preview-glyph" aria-hidden="true">✦</span> تنظیمات هوش مصنوعی</h3>
+                            <p>این صفحه ساختار رابط را نشان می‌دهد. مدل تشخیص چهره و تحلیل صدا در پیش‌نمایش اجرا نمی‌شود.</p>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Settings -->
+                    <div class="tab-panel-advanced" id="advancedPanel">
+                        <div class="setting-section-advanced">
+                            <h3><span class="fas fa-cogs preview-glyph" aria-hidden="true">⚙</span> تنظیمات پیشرفته</h3>
+                            <p>رنگ‌بندی، انتخاب نمای دوربین و حساسیت‌ها را تغییر دهید. ذخیره تنظیمات فقط ترجیح‌های نمایشی را در همین مرورگر نگه می‌دارد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer-advanced">
+                <button type="button" class="btn-advanced success" id="saveSettingsAdvancedBtn">
+                    <span class="fas fa-save preview-glyph" aria-hidden="true">✓</span>
+                    ذخیره تنظیمات
+                </button>
+                <button type="button" class="btn-advanced danger" id="resetSettingsAdvancedBtn">
+                    <span class="fas fa-undo preview-glyph" aria-hidden="true">↻</span>
+                    بازنشانی
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-advanced" id="previewInfoDialog" aria-labelledby="previewInfoTitle">
+        <div class="modal-content-advanced"><div class="modal-header-advanced"><h2 id="previewInfoTitle">درباره پروژه</h2><button type="button" class="close-btn-advanced" id="closePreviewInfo" aria-label="بستن پنجره">×</button></div><p id="previewInfoText"></p></div>
+    </dialog>
+
+    <!-- Toast Container -->
+    <div class="toast-container-advanced" id="toastContainerAdvanced" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Scripts -->
+    <script defer src="js/preview.js"></script>
+</body>
+</html>
