@@ -9,6 +9,7 @@
   }
   MMK.renderProjects=projects=>{
     const grid=document.querySelector('#project-grid');
+    if(!grid)return;
     grid.innerHTML=projects.length ? projects.map(projectCard).join('') : '<div class="resume-empty"><h3>نمونه‌کارهای بعدی در راه‌اند.</h3><p>برای صحبت دربارهٔ پروژه‌تان با من در تماس باشید.</p></div>';
   };
   MMK.renderResumes=resumes=>{
@@ -21,13 +22,15 @@
   MMK.applyProfile=profile=>{
     const contacts=MMK.contacts(profile);
     for(const field of ['name','role','intro','about']) document.querySelectorAll(`[data-profile-${field}]`).forEach(node=>{node.textContent=profile[field] || '';});
+    document.querySelectorAll('[data-profile-latin-name]').forEach(node=>{node.textContent=profile.latinName || '';});
     document.querySelectorAll('[data-contact-email]').forEach(node=>{node.textContent=profile.email || '';if(contacts.email)node.href=contacts.email;else node.hidden=true;});
     document.querySelectorAll('[data-contact-telegram]').forEach(node=>{if(contacts.telegram)node.href=contacts.telegram;else node.hidden=true;});
     document.querySelectorAll('[data-contact-github]').forEach(node=>{if(contacts.github)node.href=contacts.github;else node.hidden=true;});
-    const title=`${profile.name} | ${profile.role}`;document.title=title;
-    document.querySelector('meta[name=description]')?.setAttribute('content',profile.intro || '');
+    const page=document.body.dataset.page;
+    const title=page&&page!=='index'?`${document.body.dataset.pageLabel} | ${profile.name}`:`${profile.name} | ${profile.role}`;document.title=title;
+    if(!page||page==='index')document.querySelector('meta[name=description]')?.setAttribute('content',profile.intro || '');
     document.querySelector('meta[property="og:title"]')?.setAttribute('content',title);
-    document.querySelector('meta[property="og:description"]')?.setAttribute('content',profile.intro || '');
+    if(!page||page==='index')document.querySelector('meta[property="og:description"]')?.setAttribute('content',profile.intro || '');
   };
   MMK.openProject=id=>{
     const project=MMK.data.projects.find(item=>item.id===id); if(!project)return;

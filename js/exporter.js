@@ -176,12 +176,15 @@
     }
 
     function updatePageMetadata(path, bytes) {
-      if (path !== 'index.html' && path !== 'resume.html') return bytes;
+      const pageLabels={'work.html':'نمونه‌کارها','services.html':'خدمات','about.html':'درباره و رزومه','contact.html':'تماس','resume.html':'رزومه'};
+      if (path !== 'index.html' && !Object.hasOwn(pageLabels,path)) return bytes;
       const profile = snapshot?.profile || {};
       const name = String(profile.name ?? ''), role = String(profile.role ?? '');
-      const pageTitle = path === 'resume.html' ? `رزومه | ${name}` : role ? `${name} | ${role}` : name;
+      const pageTitle = pageLabels[path] ? `${pageLabels[path]} | ${name}` : role ? `${name} | ${role}` : name;
       let html = new TextDecoder('utf-8', {fatal: true}).decode(bytes);
       html = html.replace(/<title>[\s\S]*?<\/title>/i, () => `<title>${escapeHtml(pageTitle)}</title>`);
+      html = html.replace(/<meta\b(?=[^>]*\bproperty\s*=\s*["']og:title["'])[^>]*>/gi,
+        () => `<meta property="og:title" content="${escapeHtml(pageTitle)}">`);
       if (path === 'index.html') {
         const intro = escapeHtml(profile.intro);
         html = html.replace(/<meta\b(?=[^>]*\bname\s*=\s*["']description["'])[^>]*>/gi,

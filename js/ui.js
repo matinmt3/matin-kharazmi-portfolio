@@ -11,7 +11,8 @@
   MMK.initUI=()=>{
     document.addEventListener('click',event=>{
       const opener=event.target.closest('[data-project-open]'); if(opener){MMK.openProject(opener.dataset.projectOpen);return;}
-      if(event.target.closest('[data-open-brief]'))MMK.showDialog(document.querySelector('#brief-dialog'));
+      const briefOpener=event.target.closest('[data-open-brief]');
+      if(briefOpener){const type=briefOpener.dataset.briefType, select=document.querySelector('#brief-form select[name=type]');if(type&&Array.from(select.options).some(option=>option.value===type))select.value=type;MMK.showDialog(document.querySelector('#brief-dialog'));}
       if(event.target.closest('[data-close-dialog]'))event.target.closest('dialog').close();
     });
     document.querySelectorAll('dialog').forEach(dialog=>{
@@ -32,16 +33,18 @@
       MMK.resizeFrames(); window.ScrollTrigger?.refresh();
     }));
     const form=document.querySelector('#brief-form'), status=document.querySelector('#brief-status');
+    const validateBrief=()=>{form.elements.name.setCustomValidity(form.elements.name.value.trim()?'':'نام خود را بنویسید.');form.elements.description.setCustomValidity(form.elements.description.value.trim().length>=10?'':'توضیح پروژه را با دست‌کم ۱۰ نویسه بنویسید.');return form.reportValidity();};
+    form.addEventListener('input',event=>event.target.setCustomValidity?.(''));
     const brief=()=>{const values=new FormData(form);return `سلام ${MMK.data.profile.name}،\n\nمن ${values.get('name')} هستم.\nنوع پروژه: ${values.get('type')}\nایمیل: ${values.get('email') || 'در گفتگو اعلام می‌کنم'}\n\nشرح پروژه:\n${values.get('description')}\n\nاین درخواست از سایت معرفی شما آماده شده است.`;};
     form.addEventListener('submit',event=>{
-      event.preventDefault();if(!form.reportValidity())return;
+      event.preventDefault();if(!validateBrief())return;
       const contact=MMK.contacts(MMK.data.profile).email;
       if(!contact){status.textContent='ایمیل تماس تنظیم نشده است. شرح پروژه را کپی کنید و در تلگرام بفرستید.';return;}
       const link=document.createElement('a');link.href=`${contact}?subject=${encodeURIComponent('درخواست همکاری در طراحی سایت')}&body=${encodeURIComponent(brief())}`;link.click();
       status.textContent='پیش‌نویس آماده شد. ارسال را در برنامهٔ ایمیل خود تأیید کنید؛ در صورت باز نشدن، شرح پروژه را کپی کنید.';
     });
     document.querySelector('#copy-brief').addEventListener('click',async()=>{
-      if(!form.reportValidity())return;
+      if(!validateBrief())return;
       try{await MMK.copy(brief());status.textContent='شرح پروژه کپی شد؛ می‌توانید آن را در تلگرام بفرستید.';}
       catch{MMK.download(new Blob([brief()],{type:'text/plain;charset=utf-8'}),'project-brief.txt');status.textContent='مرورگر اجازهٔ کپی نداد؛ شرح پروژه به‌صورت فایل دانلود شد.';}
     });
