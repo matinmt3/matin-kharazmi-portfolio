@@ -42,7 +42,7 @@ export async function readManifest(root = projectRoot) {
   assert.ok(Array.isArray(manifest.files) && manifest.files.length, 'Manifest must contain files:string[]');
   manifest.files.forEach(validateRelativePath);
   assert.equal(new Set(manifest.files).size, manifest.files.length, 'Manifest contains duplicate files');
-  for (const required of ['bundle-manifest.json', 'index.html', 'studio.html', 'resume.html', 'data/site-data.js']) {
+  for (const required of ['bundle-manifest.json', 'index.html', 'work.html', 'services.html', 'about.html', 'contact.html', 'studio.html', 'resume.html', 'data/site-data.js']) {
     assert.ok(manifest.files.includes(required), `Manifest is missing ${required}`);
   }
   if (manifest.sourceArchive) {
@@ -146,6 +146,16 @@ export async function checkProject(root = projectRoot) {
     documents.set(relative, {ids});
   }
   let references = 0;
+  const mainPages=['index.html','work.html','services.html','about.html','contact.html'];
+  for(const page of mainPages){
+    const html=texts.get(page);
+    assert.equal([...html.matchAll(/<h1\b/g)].length,1,`${page}: exactly one main heading required`);
+    const nav=html.match(/<nav class="desktop-nav"[\s\S]*?<\/nav>/)?.[0];
+    assert.ok(nav,`${page}: main navigation missing`);
+    for(const target of mainPages)assert.ok(nav.includes(`href="${target}"`),`${page}: missing navigation to ${target}`);
+    assert.equal([...nav.matchAll(/aria-current="page"/g)].length,1,`${page}: current page must be indicated`);
+    assert.ok(nav.includes(`href="${page}" aria-current="page"`),`${page}: wrong current navigation item`);
+  }
   for (const [relative, text] of texts) {
     const rawReferences = [];
     if (relative.endsWith('.html')) {
