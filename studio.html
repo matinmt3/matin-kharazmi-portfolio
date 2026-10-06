@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#101112">
+  <title>استودیوی محتوا | محمد متین خوارزمی</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css"><link rel="stylesheet" href="css/studio.css">
+  <script src="data/site-data.js" defer></script><script src="assets/vendor/fflate.min.js" defer></script>
+  <script src="js/utils.js" defer></script><script src="js/store.js" defer></script>
+  <script src="js/exporter.js" defer></script><script src="js/studio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#studio-main">رفتن به ویرایش محتوا</a>
+  <header class="studio-header section-shell"><a class="brand" href="index.html"><span class="brand-mark" dir="ltr">mmk<span>.</span></span><span>استودیوی محتوا</span></a><a class="text-link" href="index.html">بازگشت به سایت</a></header>
+  <main id="studio-main" class="section-shell studio-main">
+    <div class="studio-heading"><div><p class="section-kicker">فضای کار شما</p><h1>نمونه‌کار بعدی را اضافه کن.</h1><p>معرفی، پروژه‌ها و فایل‌های رزومه را از اینجا آماده کن.</p></div><div class="studio-actions"><a class="button button-outline button-small" href="index.html?preview=draft" target="_blank" rel="noopener">دیدن پیش‌نویس</a><button id="export-site" class="button button-primary button-small" disabled>دانلود سایت کامل ZIP</button></div></div>
+    <aside class="studio-notice"><strong>ویرایش روی همین دستگاه ذخیره می‌شود.</strong><p>این صفحه، پنل سرور نیست. برای نمایش تغییرات به همه، ZIP جدید را دانلود کن و فایل‌های آن را در ریپازیتوری گیت‌هاب جایگزین کن. سایت معمولی همیشه نسخهٔ منتشرشده را نمایش می‌دهد.</p></aside>
+    <p id="studio-status" class="studio-status" role="status" aria-live="polite">در حال آماده‌سازی…</p>
+    <div class="studio-tabs" role="tablist" aria-label="بخش‌های محتوا"><button id="tab-profile" role="tab" aria-controls="panel-profile" aria-selected="true" tabindex="0" data-tab="profile">معرفی و تماس</button><button id="tab-projects" role="tab" aria-controls="panel-projects" aria-selected="false" tabindex="-1" data-tab="projects">نمونه‌کارها</button><button id="tab-resumes" role="tab" aria-controls="panel-resumes" aria-selected="false" tabindex="-1" data-tab="resumes">فایل‌های رزومه</button></div>
+    <section id="panel-profile" role="tabpanel" aria-labelledby="tab-profile" class="studio-panel">
+      <form id="profile-form" class="studio-form"><h2>معرفی شما</h2><div class="field-grid">
+        <label>نام و نام خانوادگی<input name="name" required maxlength="80" autocomplete="name"></label>
+        <label>نام به لاتین<input name="latinName" dir="ltr" maxlength="100"></label>
+        <label>عنوان فعالیت<input name="role" required maxlength="100"></label>
+        <label>ایمیل دریافت پروژه<input name="email" type="email" required maxlength="150" dir="ltr" autocomplete="email"></label>
+        <label>شناسهٔ تلگرام، بدون @<input name="telegram" dir="ltr" pattern="[A-Za-z0-9_]{5,32}" maxlength="32"></label>
+        <label>لینک گیت‌هاب<input name="github" type="url" dir="ltr" maxlength="250"></label>
+        <label class="full-field">متن معرفی در ابتدای سایت<textarea name="intro" required maxlength="600" rows="3"></textarea></label>
+        <label class="full-field">دربارهٔ من<textarea name="about" required maxlength="1600" rows="5"></textarea></label>
+      </div><button class="button button-primary button-small" type="submit">ذخیرهٔ معرفی</button></form>
+    </section>
+    <section id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" class="studio-panel" hidden>
+      <div class="panel-heading"><div><h2>نمونه‌کارها</h2><p>پروژه‌های مفهومی اولیه قابل ویرایش یا حذف از پیش‌نویس‌اند.</p></div><button id="new-project" class="button button-outline button-small">افزودن پروژه</button></div>
+      <div id="studio-project-list" class="studio-list"></div>
+      <form id="project-form" class="studio-form edit-form" hidden><h3 id="project-form-heading">پروژهٔ جدید</h3><input name="id" type="hidden"><div class="field-grid">
+        <label>نام پروژه<input name="title" required maxlength="100"></label><label>زیرعنوان<input name="subtitle" required maxlength="150"></label>
+        <label>دسته‌بندی<select name="category"><option value="branding">سایت معرفی</option><option value="webapp">وب‌اپلیکیشن</option><option value="commerce">فروشگاه</option></select></label>
+        <label>نوع پروژه<select name="type"><option>پروژهٔ شخصی</option><option>پروژهٔ مشتری</option><option>پروژهٔ مفهومی</option></select></label>
+        <label>سال<input name="year" maxlength="20" placeholder="مثلاً ۱۴۰۵"></label><label>لینک پروژه<input name="link" maxlength="500" dir="ltr" placeholder="https://…"></label>
+        <label class="full-field">شرح پروژه<textarea name="description" required maxlength="1200" rows="3"></textarea></label>
+        <label>مسئلهٔ طراحی<textarea name="challenge" maxlength="1000" rows="3"></textarea></label><label>راه‌حل شما<textarea name="solution" maxlength="1000" rows="3"></textarea></label>
+        <label>خروجی‌ها، جداشده با ویرگول<input name="deliverables" maxlength="300" placeholder="طراحی رابط، توسعهٔ وب"></label><label>ابزارها، جداشده با ویرگول<input name="stack" maxlength="300" dir="ltr" placeholder="HTML, CSS, JavaScript"></label>
+        <label class="full-field">تصویر پروژه<input name="image" type="file" accept="image/png,image/jpeg,image/webp"><span class="field-help">PNG، JPG یا WebP؛ تا ۵ مگابایت. در ویرایش، انتخاب نکردن تصویر، تصویر فعلی را نگه می‌دارد.</span></label>
+      </div><div class="form-actions"><button type="submit" class="button button-primary button-small">ذخیرهٔ پروژه</button><button id="cancel-project" type="button" class="text-button">انصراف</button></div></form>
+    </section>
+    <section id="panel-resumes" role="tabpanel" aria-labelledby="tab-resumes" class="studio-panel" hidden>
+      <div class="panel-heading"><div><h2>رزومه‌های قابل دانلود</h2><p>فقط فایل‌هایی را اضافه کن که برای نمایش عمومی آماده‌اند.</p></div><a class="text-link" href="resume.html" target="_blank" rel="noopener">دیدن رزومهٔ آنلاین</a></div>
+      <div id="studio-resume-list" class="studio-list"></div>
+      <form id="resume-form" class="studio-form"><h3>افزودن فایل PDF</h3><div class="field-grid"><label>عنوان رزومه<input name="title" required maxlength="120" placeholder="رزومهٔ طراحی و توسعهٔ وب"></label><label>توضیح کوتاه<input name="description" maxlength="250" placeholder="نسخهٔ فارسی ـ به‌روزرسانی مهر ۱۴۰۵"></label><label class="full-field">فایل رزومه<input name="file" required type="file" accept="application/pdf,.pdf"><span class="field-help">PDF؛ تا ۱۰ مگابایت. بعد از انتشار، هر بازدیدکننده می‌تواند فایل را دانلود کند.</span></label></div><button type="submit" class="button button-primary button-small">ذخیرهٔ فایل رزومه</button></form>
+    </section>
+    <details class="studio-tools"><summary>پشتیبان و بازگردانی پیش‌نویس</summary><div class="form-actions"><button id="export-json" class="text-button">دانلود پشتیبان متن‌ها JSON</button><button id="reset-draft" class="text-button">بازگردانی به محتوای منتشرشده</button></div><p>پشتیبان JSON شامل فایل‌های تصویری و PDF نیست؛ ZIP کامل همهٔ فایل‌ها را نگه می‌دارد. بازگردانی، نسخهٔ منتشرشده در گیت‌هاب را تغییر نمی‌دهد.</p><div id="reset-confirm" hidden><p>پیش‌نویس این دستگاه بازنویسی می‌شود. ابتدا ZIP یا پشتیبان دلخواهت را دانلود کن.</p><button id="confirm-reset" class="button button-outline button-small">بازگردانی پیش‌نویس</button><button id="cancel-reset" class="text-button">انصراف</button></div></details>
+  </main><footer class="section-shell studio-footer">محمد متین خوارزمی · استودیوی محتوای شخصی</footer>
+  <div id="toast" class="toast" role="status" hidden></div><noscript><p class="studio-notice">برای ویرایش محتوا، JavaScript مرورگر را فعال کنید.</p></noscript>
+</body></html>
