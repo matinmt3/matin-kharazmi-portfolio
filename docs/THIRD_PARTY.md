@@ -12,6 +12,10 @@ GSAP برای استفاده در وب‌سایت‌های تجاری تحت م�
 
 ## مراجع بصری تعامل‌ها
 
+در توسعهٔ نسخهٔ پنج‌صفحه‌ای، [اسکیل رسمی frontend-design کلود](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md) و [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) در ۶ اکتبر ۲۰۲۶ بررسی شدند. جهت بصری مشخص، خوانایی فارسی، چیدمان موبایل و کاهش حرکت در پیاده‌سازی اعمال شده‌اند. راهنمای اسکیل‌ها جزو فایل‌های اجرایی سایت نیست.
+
+روایت خانه تنها تصویر تزئینی را روی دسکتاپ ثابت نگه می‌دارد؛ متن‌ها در ترتیب طبیعی صفحه قابل خواندن می‌مانند. [gsap.matchMedia](https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/) و [ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/) مرجع رفتار واکنش‌گرا، pin و پاک‌سازی حرکت بوده‌اند.
+
 تعامل‌های سایت پیاده‌سازی اصلی با JavaScript ساده هستند. برای ایدهٔ حرکت و ساختار بصری این نمونه‌ها بررسی شده‌اند:
 
 - React Bits: [SplitText](https://github.com/DavidHDev/react-bits/blob/main/src/content/TextAnimations/SplitText/SplitText.jsx)، [Magnet](https://github.com/DavidHDev/react-bits/blob/main/src/content/Animations/Magnet/Magnet.jsx) و [TiltedCard](https://github.com/DavidHDev/react-bits/blob/main/src/content/Components/TiltedCard/TiltedCard.jsx).
