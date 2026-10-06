@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="description" content="نمونه‌کارهای مفهومی محمد متین خوارزمی؛ تجربهٔ سایت معرفی، داشبورد و فروشگاه با جزئیات طراحی.">
+  <meta property="og:title" content="نمونه‌کارها | محمد متین خوارزمی">
+  <meta property="og:description" content="نمونه‌کارهای مفهومی محمد متین خوارزمی؛ تجربهٔ سایت معرفی، داشبورد و فروشگاه با جزئیات طراحی.">
+  <meta property="og:type" content="website">
+  <title>نمونه‌کارها | محمد متین خوارزمی</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/work-contact.css">
+  <script defer src="data/site-data.js"></script>
+  <script defer src="assets/vendor/gsap.min.js"></script>
+  <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/store.js"></script>
+  <script defer src="js/render.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/motion.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="work" data-page-label="نمونه‌کارها">
+<a class="skip-link" href="#main">رفتن به محتوای اصلی</a><div class="scroll-progress" aria-hidden="true"><span></span></div>
+<div class="draft-banner" hidden>پیش‌نمایش تغییرات محلی <a href="work.html" data-published-link>نسخهٔ منتشرشده</a></div>
+<header class="site-header"><a class="brand" href="index.html" aria-label="محمد متین خوارزمی؛ صفحهٔ خانه"><span class="brand-mark" dir="ltr">m<span>m</span>k.</span><span class="brand-name" data-profile-name>محمد متین خوارزمی</span></a><nav class="desktop-nav" aria-label="ناوبری اصلی"><a href="index.html">خانه</a><a href="work.html" aria-current="page">نمونه‌کارها</a><a href="services.html">خدمات</a><a href="about.html">درباره و رزومه</a><a href="contact.html">تماس</a></nav><div class="header-actions"><button class="button button-small button-outline" data-open-brief>شروع همکاری</button><button class="menu-toggle icon-button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button></div></header>
+<nav id="mobile-nav" class="mobile-nav" aria-label="ناوبری موبایل" hidden><a href="index.html">خانه</a><a href="work.html" aria-current="page">نمونه‌کارها</a><a href="services.html">خدمات</a><a href="about.html">درباره و رزومه</a><a href="contact.html">تماس</a></nav>
+<main id="main" class="page-work">
+  <section class="page-intro section-shell" aria-labelledby="work-title">
+    <p class="section-kicker">نمونه‌کارها</p>
+    <h1 id="work-title" class="page-title"><span class="title-line"><span>هر پروژه،</span></span><span class="title-line"><span>یک زبان تازه.</span></span></h1>
+    <div class="work-intro-bottom">
+      <p class="page-lead">از معرفی یک استودیو تا داشبورد و فروشگاه؛ اینجا می‌توانید شیوهٔ طراحی من را ببینید و با نمونه‌ها کار کنید.</p>
+      <p class="work-disclosure">این سه نمونه، پروژه‌های مفهومی‌اند؛ برای نمایش طراحی و تعامل ساخته شده‌اند و به کسب‌وکار یا مشتری واقعی نسبت داده نمی‌شوند.</p>
+    </div>
+  </section>
+
+  <section class="page-section section-shell work-gallery" aria-labelledby="gallery-title">
+    <div class="work-gallery-heading">
+      <h2 id="gallery-title">تجربه کنید.</h2>
+      <div class="project-filters" role="group" aria-label="فیلتر نمونه‌کارها">
+        <button class="filter active" data-filter="all" aria-pressed="true">همه</button>
+        <button class="filter" data-filter="branding" aria-pressed="false">سایت معرفی</button>
+        <button class="filter" data-filter="webapp" aria-pressed="false">وب‌اپلیکیشن</button>
+        <button class="filter" data-filter="commerce" aria-pressed="false">فروشگاه</button>
+      </div>
+    </div>
+    <p class="filter-status sr-only" role="status" aria-live="polite">همهٔ نمونه‌کارها نمایش داده می‌شوند.</p>
+    <div id="project-grid" class="project-grid"></div>
+    <noscript><p class="callout">برای نمایش جزئیات و فیلترها، جاوااسکریپت مرورگر را فعال کنید. نمونه‌ها را مستقیم ببینید: <a href="demos/atelier.html">آتلیه</a>، <a href="demos/metric.html">مِتریک</a> و <a href="demos/lumen.html">لومن</a>.</p></noscript>
+  </section>
+
+  <section class="page-section section-shell work-comparison" aria-labelledby="comparison-title">
+    <div class="section-heading">
+      <div><p class="section-kicker">برای انتخاب مسیر</p><h2 id="comparison-title">سه نیاز.<br>سه شکل متفاوت.</h2></div>
+      <p class="section-note">هر نمونه روی یک مسئله تمرکز می‌کند. در سایت کامل می‌توانید تعامل اصلی آن را امتحان کنید.</p>
+    </div>
+    <div class="work-table-scroll" tabindex="0" role="region" aria-label="مقایسهٔ نمونه‌های مفهومی؛ در نمایشگر کوچک قابل پیمایش افقی است">
+      <table class="work-table">
+        <caption>مقایسهٔ کاربرد و قابلیت‌های نمونه‌های مفهومی</caption>
+        <thead><tr><th scope="col">نمونه</th><th scope="col">مسئلهٔ اصلی</th><th scope="col">تعامل قابل تجربه</th><th scope="col">مشاهده</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><span class="work-table-title">آتلیه</span><span class="work-table-type">سایت معرفی</span></th><td>معرفی هویت و خدمات یک استودیو</td><td>مرور خدمات و مسیر تماس</td><td><a class="text-link" href="demos/atelier.html">مشاهدهٔ آتلیه</a></td></tr>
+          <tr><th scope="row"><span class="work-table-title">مِتریک</span><span class="work-table-type">وب‌اپلیکیشن</span></th><td>خواندن سریع اطلاعات در داشبورد</td><td>انتخاب بازهٔ زمانی و تغییر نمودار</td><td><a class="text-link" href="demos/metric.html">مشاهدهٔ مِتریک</a></td></tr>
+          <tr><th scope="row"><span class="work-table-title">لومن</span><span class="work-table-type">فروشگاه</span></th><td>نمایش محصول و ساده کردن انتخاب</td><td>افزودن محصول و تغییر تعداد در سبد</td><td><a class="text-link" href="demos/lumen.html">مشاهدهٔ لومن</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="work-table-note">اطلاعات مِتریک نمایشی است. سبد لومن برای تجربهٔ رابط ساخته شده و به پرداخت واقعی متصل نیست.</p>
+  </section>
+
+  <section class="section-shell work-next page-section" aria-labelledby="next-project-title">
+    <div><p class="section-kicker">پروژهٔ بعدی</p><h2 id="next-project-title">نوبت ایدهٔ شماست.</h2><p>کاربرد سایت، مخاطب و چیزی که می‌خواهید بهتر شود را بگویید؛ از همان‌جا مسیر طراحی را شروع می‌کنیم.</p></div>
+    <a class="button button-primary magnetic" data-magnetic href="contact.html"><span>شرح پروژه‌ام را می‌نویسم</span></a>
+  </section>
+</main>
+
+<footer class="site-footer section-shell"><a class="brand-mark" href="index.html" dir="ltr" aria-label="صفحهٔ خانه">mmk.</a><p>طراحی با دقت، ساخته‌شده برای تجربه.</p><div><a href="about.html#resume">رزومه</a><a data-contact-github href="https://github.com/matinmt3" target="_blank" rel="noopener noreferrer">GitHub</a><button id="motion-toggle" class="text-button" aria-pressed="false">کاهش حرکت</button><span dir="ltr">© <span data-year>2026</span></span></div></footer>
+  <dialog id="project-dialog" class="modal project-modal" aria-labelledby="project-dialog-title"><button class="modal-close icon-button" data-close-dialog aria-label="بستن جزئیات پروژه">×</button><div id="project-dialog-content"></div></dialog>
+  <dialog id="brief-dialog" class="modal brief-modal" aria-labelledby="brief-title"><button class="modal-close icon-button" data-close-dialog aria-label="بستن فرم پروژه">×</button><p class="section-kicker">شروع همکاری</p><h2 id="brief-title">از ایده‌تان بگویید.</h2><p class="modal-description">چند خط دربارهٔ چیزی که می‌خواهید بسازیم؛ این اطلاعات پیش‌نویس گفتگو را آماده می‌کند.</p><form id="brief-form"><div class="form-row"><label>نام شما <span aria-hidden="true">*</span><input name="name" autocomplete="name" required maxlength="100"></label><label>ایمیل شما<input name="email" type="email" autocomplete="email" maxlength="160"></label></div><label>نوع پروژه<select name="type"><option>سایت معرفی / لندینگ</option><option>وب‌اپلیکیشن / داشبورد</option><option>فروشگاه</option><option>بازطراحی سایت</option><option>هنوز تصمیم نگرفته‌ام</option></select></label><label>توضیح کوتاه پروژه <span aria-hidden="true">*</span><textarea name="description" rows="4" required minlength="10" maxlength="4000" placeholder="چه چیزی می‌خواهید بسازیم و برای چه مخاطبی؟"></textarea></label><div class="brief-actions"><button type="submit" class="button button-primary">آماده کردن ایمیل</button><button type="button" class="button button-outline" id="copy-brief">کپی شرح پروژه</button></div><p class="form-note">ایمیل به‌صورت پیش‌نویس باز می‌شود؛ ارسال آن را در برنامهٔ ایمیل خود تأیید می‌کنید.</p><a class="text-link" data-contact-telegram target="_blank" rel="noopener noreferrer">یا در تلگرام گفتگو کنیم</a><p id="brief-status" class="form-status" role="status"></p></form></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <noscript><p class="noscript-note">برای دیدن نمونه‌کارهای تعاملی JavaScript را فعال کنید. برای ارتباط ایمیل بزنید: <a href="mailto:matin.kharazmi5@gmail.com">matin.kharazmi5@gmail.com</a></p></noscript>
+</body>
+</html>

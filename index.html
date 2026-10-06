@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#101112">
-  <meta name="description" content="محمد متین خوارزمی، طراح و توسعه‌دهنده وب. نمونه‌کارهای طراحی سایت، رزومه و شروع همکاری برای ساخت تجربه‌های دیجیتال.">
-  <meta property="og:title" content="محمد متین خوارزمی | طراحی و توسعه وب">
-  <meta property="og:description" content="طراحی دقیق. تجربهٔ ماندگار. نمونه‌کارها، رزومه و راه‌های همکاری.">
+  <meta name="description" content="محمد متین خوارزمی، طراح و توسعه‌دهنده وب. نمونه‌کارها و مسیر همکاری برای طراحی سایت اختصاصی.">
+  <meta property="og:title" content="خانه | محمد متین خوارزمی">
+  <meta property="og:description" content="محمد متین خوارزمی، طراح و توسعه‌دهنده وب. نمونه‌کارها و مسیر همکاری برای طراحی سایت اختصاصی.">
   <meta property="og:type" content="website">
-  <title>محمد متین خوارزمی | طراحی و توسعهٔ وب</title>
+  <title>خانه | محمد متین خوارزمی</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages.css">
   <script defer src="data/site-data.js"></script>
   <script defer src="assets/vendor/gsap.min.js"></script>
   <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
@@ -22,61 +23,49 @@
   <script defer src="js/motion.js"></script>
   <script defer src="js/app.js"></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
-  <div class="draft-banner" hidden>پیش‌نمایش تغییرات محلی <a href="index.html">نسخهٔ منتشرشده</a></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="محمد متین خوارزمی؛ ابتدای صفحه"><span class="brand-mark" dir="ltr">m<span>m</span>k.</span><span class="brand-name" data-profile-name>محمد متین خوارزمی</span></a>
-    <nav class="desktop-nav" aria-label="ناوبری اصلی"><a href="#work">نمونه‌کارها</a><a href="#services">خدمات</a><a href="#about">دربارهٔ من</a><a href="#resume">رزومه</a></nav>
-    <div class="header-actions"><button class="button button-small button-outline" data-open-brief>شروع همکاری</button><button class="menu-toggle icon-button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button></div>
-  </header>
-  <nav id="mobile-nav" class="mobile-nav" aria-label="ناوبری موبایل" hidden><a href="#work">نمونه‌کارها</a><a href="#services">خدمات</a><a href="#about">دربارهٔ من</a><a href="#resume">رزومه</a><a href="#contact">ارتباط</a></nav>
-  <main id="main">
+<body data-page="index" data-page-label="خانه">
+<a class="skip-link" href="#main">رفتن به محتوای اصلی</a><div class="scroll-progress" aria-hidden="true"><span></span></div>
+<div class="draft-banner" hidden>پیش‌نمایش تغییرات محلی <a href="index.html" data-published-link>نسخهٔ منتشرشده</a></div>
+<header class="site-header"><a class="brand" href="index.html" aria-label="محمد متین خوارزمی؛ صفحهٔ خانه"><span class="brand-mark" dir="ltr">m<span>m</span>k.</span><span class="brand-name" data-profile-name>محمد متین خوارزمی</span></a><nav class="desktop-nav" aria-label="ناوبری اصلی"><a href="index.html" aria-current="page">خانه</a><a href="work.html">نمونه‌کارها</a><a href="services.html">خدمات</a><a href="about.html">درباره و رزومه</a><a href="contact.html">تماس</a></nav><div class="header-actions"><button class="button button-small button-outline" data-open-brief>شروع همکاری</button><button class="menu-toggle icon-button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button></div></header>
+<nav id="mobile-nav" class="mobile-nav" aria-label="ناوبری موبایل" hidden><a href="index.html" aria-current="page">خانه</a><a href="work.html">نمونه‌کارها</a><a href="services.html">خدمات</a><a href="about.html">درباره و رزومه</a><a href="contact.html">تماس</a></nav>
+<main id="main" class="page-home">
     <section class="hero section-shell" id="home" aria-labelledby="hero-title">
       <figure class="hero-art" aria-hidden="true"><img src="assets/images/chrome-ribbon.webp" width="1774" height="887" alt="" fetchpriority="high"><div class="art-caption"><span dir="ltr">Form follows feeling.</span><span>طراحی، با یک نگاه متفاوت.</span></div></figure>
       <div class="hero-copy">
         <p class="hero-role" data-profile-role>طراح و توسعه‌دهندهٔ وب</p>
         <h1 id="hero-title"><span class="title-line"><span>دقیق طراحی می‌کنم.</span></span><span class="title-line"><span>ماندگار می‌سازم.</span></span></h1>
         <p class="hero-description" data-profile-intro>برای کسب‌وکارهایی که می‌خواهند بهتر دیده شوند، وب‌سایت‌های دقیق، سریع و به‌یادماندنی می‌سازم. از اولین طرح تا تجربهٔ نهایی روی موبایل.</p>
-        <div class="hero-actions"><a class="button button-primary magnetic" href="#work"><span>دیدن نمونه‌کارها</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a><button class="text-button" data-open-brief>دربارهٔ پروژه‌ات صحبت کنیم</button></div>
+        <div class="hero-actions"><a class="button button-primary magnetic" href="work.html"><span>دیدن نمونه‌کارها</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a><button class="text-button" data-open-brief>دربارهٔ پروژه‌ات صحبت کنیم</button></div>
         <p class="hero-signature"><span data-profile-name>محمد متین خوارزمی</span><span dir="ltr">Independent web designer</span></p>
       </div>
       <div class="hero-bottom"><span>از ایده تا یک تجربهٔ قابل استفاده</span><a href="#work" class="scroll-cue">ادامهٔ مسیر <span aria-hidden="true">↓</span></a><span class="hero-location" dir="ltr">Design / Code / Experience</span></div>
     </section>
 
-    <section class="work-section section-shell" id="work" aria-labelledby="work-title">
-      <div class="section-heading"><div><p class="section-kicker">نگاهی به زبان طراحی من</p><h2 id="work-title">کارهایی که می‌توانید<br>با آن‌ها تجربه‌ام کنید.</h2></div><p class="section-note">پروژه‌ها را تجربه کنید؛ نوع هر کار، از مفهومی تا اجرا برای مشتری، کنار آن مشخص شده است.</p></div>
-      <div class="project-filters" role="group" aria-label="فیلتر نمونه‌کارها"><button class="filter active" data-filter="all" aria-pressed="true">همهٔ کارها</button><button class="filter" data-filter="branding" aria-pressed="false">سایت معرفی</button><button class="filter" data-filter="webapp" aria-pressed="false">وب‌اپلیکیشن</button><button class="filter" data-filter="commerce" aria-pressed="false">فروشگاه</button></div>
-      <div id="project-grid" class="project-grid"></div>
-      <p class="filter-status sr-only" aria-live="polite"></p>
-    </section>
 
-    <section class="services-section section-shell" id="services" aria-labelledby="services-title">
-      <div class="section-heading"><div><p class="section-kicker">چه چیزی می‌سازیم؟</p><h2 id="services-title">متناسب با کسب‌وکار شما.</h2></div><p class="section-note">از یک معرفی روشن تا یک تجربهٔ تعاملی؛ مسیر ساخت را با هدف پروژه هماهنگ می‌کنیم.</p></div>
-      <div class="service-list">
-        <details class="service" open><summary><span>سایت معرفی و لندینگ</span><span class="service-hint">برای دیده‌شدن و شروع گفتگو</span><span class="plus" aria-hidden="true"></span></summary><div class="service-body"><p>یک حضور حرفه‌ای برای کسب‌وکار یا برند شخصی شما؛ با پیام روشن، نمایش خدمات و مسیر تماس کوتاه.</p><div class="tags"><span>طراحی اختصاصی</span><span>مناسب موبایل</span><span>ساختار جست‌وجوپذیر</span></div></div></details>
-        <details class="service"><summary><span>رابط وب و تجربهٔ تعاملی</span><span class="service-hint">برای محصولی که راحت استفاده می‌شود</span><span class="plus" aria-hidden="true"></span></summary><div class="service-body"><p>داشبورد، پنل و صفحات محصول با سلسله‌مراتب درست، حالت‌های واضح و تعاملاتی که به کاربر کمک می‌کنند.</p><div class="tags"><span>طراحی رابط</span><span>تعامل و انیمیشن</span><span>دسترسی‌پذیری</span></div></div></details>
-        <details class="service"><summary><span>بازطراحی و توسعهٔ فرانت‌اند</span><span class="service-hint">برای تجربه‌ای منسجم‌تر و سریع‌تر</span><span class="plus" aria-hidden="true"></span></summary><div class="service-body"><p>تبدیل طرح به صفحات واقعی یا بازطراحی رابط فعلی؛ با توجه به خوانایی، عملکرد، موبایل و جزئیات اجرایی.</p><div class="tags"><span>HTML و CSS</span><span>JavaScript</span><span>GSAP و ScrollTrigger</span></div></div></details>
-      </div>
-    </section>
-
-    <section class="about-section section-shell" id="about" aria-labelledby="about-title">
-      <div class="about-label"><span class="large-monogram" dir="ltr">mmk<span>.</span></span><p data-profile-name>محمد متین خوارزمی</p><span data-profile-role>طراح و توسعه‌دهندهٔ وب</span></div>
-      <div class="about-copy"><p class="section-kicker">پشت این صفحه</p><h2 id="about-title">جزئیات کوچک.<br>تفاوت‌های بزرگ.</h2><p data-profile-about></p><a class="text-link" href="resume.html">مرور رزومهٔ آنلاین</a></div>
-    </section>
-
-    <section class="process-section section-shell" aria-labelledby="process-title">
-      <div class="section-heading"><div><p class="section-kicker">روند همکاری</p><h2 id="process-title">شفاف، از ابتدا تا تحویل.</h2></div><button class="text-button" data-open-brief>شروع یک گفتگو</button></div>
-      <ol class="process-grid"><li><span class="step-number" aria-hidden="true">۰۱</span><h3>هدف را روشن می‌کنیم.</h3><p>مخاطب، نیازها و محدودهٔ پروژه را مشخص می‌کنیم تا مسیر ساخت روشن باشد.</p></li><li><span class="step-number" aria-hidden="true">۰۲</span><h3>طرح را شکل می‌دهیم.</h3><p>ساختار و زبان بصری را طراحی می‌کنیم و پیش از توسعه، روی جزئیات توافق می‌کنیم.</p></li><li><span class="step-number" aria-hidden="true">۰۳</span><h3>می‌سازیم و بررسی می‌کنیم.</h3><p>صفحات، تعاملات و نسخهٔ موبایل ساخته می‌شوند و در مرورگر بررسی می‌شوند.</p></li><li><span class="step-number" aria-hidden="true">۰۴</span><h3>تحویل می‌دهیم.</h3><p>نسخهٔ نهایی و فایل‌ها را با راهنمای استفاده و انتشار در اختیار شما می‌گذارم.</p></li></ol>
-    </section>
-
-    <section class="resume-section section-shell" id="resume" aria-labelledby="resume-title"><div><p class="section-kicker">در یک نگاه</p><h2 id="resume-title">رزومه و معرفی حرفه‌ای.</h2><p>معرفی، حوزه‌های کاری و راه‌های ارتباط را در یک صفحهٔ قابل چاپ ببینید.</p><a class="button button-outline" href="resume.html">مشاهدهٔ رزومهٔ آنلاین</a></div><div class="resume-files" id="resume-files"></div></section>
-
-    <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title"><p class="section-kicker">قدم بعدی</p><h2 id="contact-title">ایدهٔ بعدی شما،<br>می‌تواند از اینجا شروع شود.</h2><div class="contact-row"><button class="button button-dark magnetic" data-open-brief><span>دربارهٔ پروژه‌تان بگویید</span></button><div class="direct-contact"><a data-contact-telegram target="_blank" rel="noopener noreferrer">گفتگو در تلگرام</a><a class="email-link" data-contact-email dir="ltr"></a></div></div></section>
-  </main>
-  <footer class="site-footer section-shell"><a class="brand-mark" href="#home" dir="ltr" aria-label="ابتدای صفحه">mmk.</a><p>طراحی با دقت، ساخته‌شده برای تجربه.</p><div><a data-contact-github target="_blank" rel="noopener noreferrer">GitHub</a><button id="motion-toggle" class="text-button" aria-pressed="false">کاهش حرکت</button><span dir="ltr">© <span data-year>2026</span></span></div></footer>
-
+<section class="section-shell home-story page-section" aria-labelledby="story-title">
+  <div class="section-heading"><div><p class="section-kicker">یک نگاه، یک مسیر</p><h2 id="story-title">حضور شما در وب،<br>باید به‌یاد بماند.</h2></div><p class="section-note">از اولین برداشت تا لحظهٔ تماس؛ طراحی را برای یک مسیر روشن و قابل استفاده شکل می‌دهم.</p></div>
+  <div class="story-track">
+    <div class="story-visual" aria-hidden="true"><span class="story-visual-label" dir="ltr">IDEA → EXPERIENCE</span><img class="story-visual-art" src="assets/images/chrome-ribbon.webp" width="1774" height="887" alt="" loading="lazy"><div class="story-visual-word" dir="ltr">make<br>it matter<span>.</span></div><div class="story-progress"><span></span></div></div>
+    <div class="story-panels">
+      <article class="story-panel" data-reveal><span class="story-number" aria-hidden="true">۰۱ / هویت</span><h3>همان یک نگاه اول.</h3><p>تایپوگرافی، رنگ و تصویر باید پیام شما را روشن کنند. صفحه از شخصیت برند شروع می‌شود و به یک زبان بصری منسجم می‌رسد.</p><a class="text-link" href="about.html">نگاه من به طراحی</a></article>
+      <article class="story-panel" data-reveal><span class="story-number" aria-hidden="true">۰۲ / تجربه</span><h3>جزئیاتی که حس می‌شوند.</h3><p>از مرور خدمات تا پر کردن فرم؛ هر تعامل جای مشخصی دارد. حرکت آرام و هدفمند به ریتم تجربه کمک می‌کند.</p><a class="text-link" href="work.html">نمونه‌ها را تجربه کنید</a></article>
+      <article class="story-panel" data-reveal><span class="story-number" aria-hidden="true">۰۳ / نتیجه</span><h3>یک قدم نزدیک‌تر به گفتگو.</h3><p>مخاطب باید بداند چه چیزی ارائه می‌کنید و چطور با شما ارتباط بگیرد. مسیر را کوتاه، خوانا و مناسب موبایل می‌سازیم.</p><a class="text-link" href="services.html">خدمات و مسیر همکاری</a></article>
+    </div>
+  </div>
+</section>
+<section class="work-section section-shell home-selected" id="work" aria-labelledby="selected-title">
+  <div class="section-heading"><div><p class="section-kicker">منتخبی از طراحی‌ها</p><h2 id="selected-title">ببینید. تجربه کنید.</h2></div><a class="text-link" href="work.html">همهٔ نمونه‌کارها و جزئیات</a></div>
+  <p class="home-project-note">سه پروژهٔ مفهومی برای نمایش طراحی و تعامل؛ هر نمونه را می‌توانید در مرورگر تجربه کنید.</p><div id="project-grid" class="project-grid"></div>
+  <noscript><p>نمونه‌ها: <a class="text-link" href="demos/atelier.html">آتلیه</a>، <a class="text-link" href="demos/metric.html">متریک</a> و <a class="text-link" href="demos/lumen.html">لومن</a>.</p></noscript>
+</section>
+<section class="section-shell home-services page-section" id="services" aria-labelledby="home-services-title">
+  <div class="section-heading"><div><p class="section-kicker">متناسب با نیاز شما</p><h2 id="home-services-title">چه چیزی می‌سازیم؟</h2></div><a class="text-link" href="services.html">خدمات، خروجی‌ها و روند اجرا</a></div>
+  <div class="home-service-list"><a href="services.html#brand-sites"><span aria-hidden="true">۰۱</span><div><h3>سایت معرفی و لندینگ</h3><p>برای معرفی برند و شروع ارتباط.</p></div><span aria-hidden="true">↙</span></a><a href="services.html#interactive-ui"><span aria-hidden="true">۰۲</span><div><h3>رابط وب و تجربهٔ تعاملی</h3><p>برای محصولی که راحت استفاده می‌شود.</p></div><span aria-hidden="true">↙</span></a><a href="services.html#frontend-build"><span aria-hidden="true">۰۳</span><div><h3>توسعه و بازطراحی</h3><p>از یک طرح تا یک تجربهٔ واقعی در مرورگر.</p></div><span aria-hidden="true">↙</span></a></div>
+</section>
+<section class="section-shell home-about page-section" id="about" aria-labelledby="home-about-title"><div><span class="home-about-mark" dir="ltr" aria-hidden="true">mmk.</span><p data-profile-name>محمد متین خوارزمی</p></div><div><p class="section-kicker">پشت این تجربه</p><h2 id="home-about-title">طراحی با دقت.<br>ساختن با فکر.</h2><p data-profile-about></p><div class="home-about-links"><a class="text-link" href="about.html">دربارهٔ من و شیوهٔ کار</a><a class="text-link" href="about.html#resume" id="resume">رزومه و معرفی</a></div></div></section>
+<section class="contact-section section-shell" id="contact" aria-labelledby="home-contact-title"><p class="section-kicker">پروژهٔ بعدی</p><h2 id="home-contact-title">ایدهٔ شما،<br>شروع یک تجربهٔ تازه.</h2><div class="contact-row"><a class="button button-dark magnetic" href="contact.html"><span>دربارهٔ پروژه‌تان بگویید</span></a><div class="direct-contact"><a data-contact-telegram href="https://t.me/matinkha87" target="_blank" rel="noopener noreferrer">گفتگو در تلگرام</a><a class="email-link" data-contact-email href="mailto:matin.kharazmi5@gmail.com" dir="ltr">matin.kharazmi5@gmail.com</a></div></div></section>
+</main>
+<footer class="site-footer section-shell"><a class="brand-mark" href="index.html" dir="ltr" aria-label="صفحهٔ خانه">mmk.</a><p>طراحی با دقت، ساخته‌شده برای تجربه.</p><div><a href="about.html#resume">رزومه</a><a data-contact-github href="https://github.com/matinmt3" target="_blank" rel="noopener noreferrer">GitHub</a><button id="motion-toggle" class="text-button" aria-pressed="false">کاهش حرکت</button><span dir="ltr">© <span data-year>2026</span></span></div></footer>
   <dialog id="project-dialog" class="modal project-modal" aria-labelledby="project-dialog-title"><button class="modal-close icon-button" data-close-dialog aria-label="بستن جزئیات پروژه">×</button><div id="project-dialog-content"></div></dialog>
   <dialog id="brief-dialog" class="modal brief-modal" aria-labelledby="brief-title"><button class="modal-close icon-button" data-close-dialog aria-label="بستن فرم پروژه">×</button><p class="section-kicker">شروع همکاری</p><h2 id="brief-title">از ایده‌تان بگویید.</h2><p class="modal-description">چند خط دربارهٔ چیزی که می‌خواهید بسازیم؛ این اطلاعات پیش‌نویس گفتگو را آماده می‌کند.</p><form id="brief-form"><div class="form-row"><label>نام شما <span aria-hidden="true">*</span><input name="name" autocomplete="name" required maxlength="100"></label><label>ایمیل شما<input name="email" type="email" autocomplete="email" maxlength="160"></label></div><label>نوع پروژه<select name="type"><option>سایت معرفی / لندینگ</option><option>وب‌اپلیکیشن / داشبورد</option><option>فروشگاه</option><option>بازطراحی سایت</option><option>هنوز تصمیم نگرفته‌ام</option></select></label><label>توضیح کوتاه پروژه <span aria-hidden="true">*</span><textarea name="description" rows="4" required minlength="10" maxlength="4000" placeholder="چه چیزی می‌خواهید بسازیم و برای چه مخاطبی؟"></textarea></label><div class="brief-actions"><button type="submit" class="button button-primary">آماده کردن ایمیل</button><button type="button" class="button button-outline" id="copy-brief">کپی شرح پروژه</button></div><p class="form-note">ایمیل به‌صورت پیش‌نویس باز می‌شود؛ ارسال آن را در برنامهٔ ایمیل خود تأیید می‌کنید.</p><a class="text-link" data-contact-telegram target="_blank" rel="noopener noreferrer">یا در تلگرام گفتگو کنیم</a><p id="brief-status" class="form-status" role="status"></p></form></dialog>
   <div class="toast" id="toast" role="status" hidden></div>

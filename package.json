@@ -1,8 +1,14 @@
 {
   "name": "matin-kharazmi-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Persian RTL web designer portfolio for Mohammad Matin Kharazmi, built with HTML, CSS, JavaScript, GSAP and ScrollTrigger.",
-  "scripts": {"start":"node scripts/serve.mjs", "check":"node scripts/check.mjs", "build":"node scripts/build.mjs"},
-  "engines": {"node": ">=20"}
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }

@@ -6,6 +6,7 @@
     ".nojekyll",
     "LICENSE",
     "README.md",
+    "about.html",
     "assets/favicon.svg",
     "assets/fonts/Vazirmatn.woff2",
     "assets/images/chrome-ribbon.webp",
@@ -15,10 +16,14 @@
     "assets/vendor/gsap.min.js",
     "assets/vendor/vazirmatn-OFL.txt",
     "bundle-manifest.json",
+    "contact.html",
     "css/demo.css",
     "css/main.css",
+    "css/pages.css",
     "css/resume.css",
+    "css/services-about.css",
     "css/studio.css",
+    "css/work-contact.css",
     "data/site-data.js",
     "demos/atelier.html",
     "demos/lumen.html",
@@ -29,6 +34,7 @@
     "export-source.json",
     "index.html",
     "js/app.js",
+    "js/contact.js",
     "js/demo-lumen.js",
     "js/demo-metric.js",
     "js/exporter.js",
@@ -44,7 +50,9 @@
     "scripts/build.mjs",
     "scripts/check.mjs",
     "scripts/serve.mjs",
-    "studio.html"
+    "services.html",
+    "studio.html",
+    "work.html"
   ],
   "sourceArchive": "export-source.json"
 }
