@@ -75,3 +75,8 @@ npm run build
 این نسخه با HTML، CSS و JavaScript ساده، GSAP 3.15.0، ScrollTrigger، fflate 0.8.3 و Vazirmatn 33.0.3 ساخته شده است. حرکت عنوان‌ها روی خطوط کامل فارسی اعمال می‌شود؛ گزینهٔ کاهش حرکت و تنظیم سیستم‌عامل پشتیبانی می‌شوند. مشخصات نسخه‌ها در [dependencies.json](docs/dependencies.json) و منابع/مجوزها در [THIRD_PARTY.md](docs/THIRD_PARTY.md) ثبت شده‌اند.
 
 حقوق کد اصلی، نام و هویت سایت طبق [LICENSE](LICENSE) محفوظ است. کتابخانه‌ها و فونت تابع مجوزهای جداگانهٔ خود هستند.
+
+
+## مخزن‌های مستقل نمونه‌کار | Independent project repositories
+
+[فهرست پروژه‌ها، فناوری‌ها و محدودهٔ دموها | Project catalog](PROJECTS.md)
