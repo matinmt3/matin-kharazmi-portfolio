@@ -1,27 +1,48 @@
-# مخزن‌های عمومی نمونه‌کار | Public project repositories
+# فهرست مخزن‌های نمونه‌کار | Project repositories
 
-فهرست پروژه‌های منتشرشدهٔ محمد متین خوارزمی. آویدا دو پیاده‌سازی مستقل Python و React دارد. آتلیه، متریک و لومن پروژه‌های مفهومی‌اند؛ پروژه‌های نمایشی به‌عنوان سابقهٔ مشتری یا خدمت تجاری تأییدشده معرفی نمی‌شوند.
+این فهرست، سورس پروژه‌های مستقل محمد متین خوارزمی را معرفی می‌کند. **آویدا دو پیاده‌سازی جداگانهٔ Python و React دارد.** آتلیه، مِتریک و لومن پروژه‌های مفهومی‌اند؛ VisionGuard Pro یک پروژهٔ شخصی است. نمونه‌های نمایشی به‌عنوان سابقهٔ مشتری یا نتیجهٔ تجاری تأییدشده معرفی نمی‌شوند.
 
-Public source projects by Mohammad Matin Kharazmi. Avida has independent Python and React implementations. Atelier, Metric and Lumen are conceptual projects. Demos are not represented as verified client commissions or operational services.
+This catalog links the independent source repositories in Mohammad Matin Kharazmi's portfolio. **Avida has separate Python and React implementations.** Atelier, Metric and Lumen are conceptual projects; VisionGuard Pro is a personal project. Demo projects are not presented as verified client commissions or commercial outcomes.
 
-| پروژه / Project | محدوده / Scope | مخزن / Repository |
+| پروژه / Project | نوع / Type | پیاده‌سازی و محدوده / Implementation and scope | مخزن / Repository |
+| --- | --- | --- | --- |
+| پورتفولیوی محمد متین خوارزمی / Matin Kharazmi Portfolio | پورتفولیوی شخصی / Personal portfolio | HTML، CSS و JavaScript؛ شرح پروژه‌ها، دموها و ویرایشگر محلی محتوا. / Case studies, demos and a local content editor. | [matin-kharazmi-portfolio](https://github.com/matinmt3/matin-kharazmi-portfolio) |
+| RevMaMad — فهرست منابع / RevMaMad Resource Hub | سایت مستقل / Static resource hub | جستجو، فیلتر، نشان‌گذاری محلی، تم و سه‌بعدی اختیاری؛ فهرست سرویس‌های بیرونی تضمین دسترس‌پذیری آن‌ها نیست. / Search, filters, local bookmarks and optional 3D. | [revmamad-resource-hub](https://github.com/matinmt3/revmamad-resource-hub) |
+| مطب آویدا — Python / Avida Dental Clinic Python | دموی کاربردی / Application demo | Python stdlib + SQLite؛ نوبت‌دهی، حساب مراجع، مشاوره و مدیریت با دادهٔ نمونه. / Booking, accounts, conversations and administration with synthetic data. | [avida-dental-clinic-python](https://github.com/matinmt3/avida-dental-clinic-python) |
+| مطب آویدا — React / Avida Clinic React | دموی کاربردی / Application demo | React SSR + Express + SQLite؛ پیاده‌سازی مستقل از نسخهٔ Python. / Independent React implementation with booking and role-based administration. | [avida-clinic-react](https://github.com/matinmt3/avida-clinic-react) |
+| داروخانه نازی / Nazy Pharmacy | دموی کاربردی / Application demo | React + TypeScript + Express + SQLite؛ کاتالوگ، حساب‌ها و پنل مالک؛ بدون فروش یا نسخه‌پیچی واقعی. / Catalog, accounts and owner panel; no dispensing or payment service. | [nazy-pharmacy](https://github.com/matinmt3/nazy-pharmacy) |
+| آرتمیس — رابط پذیرش / Artemis Dental Reception UI | پیش‌نمونهٔ رابط / UI prototype | React + Vite؛ ردیف‌های پرداخت و جمع مبلغ در حافظه؛ بدون پایگاه داده یا ذخیرهٔ پرونده. / In-memory payment rows and totals; no patient-record persistence. | [artemis-dental-demo](https://github.com/matinmt3/artemis-dental-demo) |
+| آتلیه / Atelier Studio | پروژهٔ مفهومی / Concept | سایت فارسی استودیوی طراحی با HTML/CSS و چیدمان واکنش‌گرا. / Persian creative-studio concept website. | [atelier-studio-demo](https://github.com/matinmt3/atelier-studio-demo) |
+| مِتریک / Metric Dashboard | پروژهٔ مفهومی / Concept | داشبورد با نمودار، بازهٔ زمانی و جدول؛ تمام آمار نمونه‌اند. / Interactive dashboard with sample analytics and project statuses. | [metric-dashboard-demo](https://github.com/matinmt3/metric-dashboard-demo) |
+| لومن / Lumen Store | پروژهٔ مفهومی / Concept | ویترین آثار دیجیتال و سبد محلی؛ بدون پرداخت یا سفارش واقعی. / Digital-art storefront and local demo basket. | [lumen-store-demo](https://github.com/matinmt3/lumen-store-demo) |
+| VisionGuard Pro | پیش‌نمایش پروژهٔ شخصی / Personal project preview | تنظیمات، داشبورد و گالری با دادهٔ نمونه؛ بدون دوربین، میکروفون یا ارسال رسانه. / Local UI preview without media capture or outbound integration. | [visionguard-pro-preview](https://github.com/matinmt3/visionguard-pro-preview) |
+| ستایش سلجوقی / Setayesh Nail Atelier | دموی فرانت‌اند / Frontend demo | فروشگاه مفهومی با فیلتر، سبد و علاقه‌مندی محلی؛ فرم‌ها نمایشی‌اند. / Concept shop with filters, local basket, favorites and demo forms. | [setayesh-nail-shop](https://github.com/matinmt3/setayesh-nail-shop) |
+| وب‌سایت SYMEX VPN / SYMEX VPN Website | پیش‌نمایش وب / Website preview | لندینگ فارسی با شبیه‌ساز رابط اتصال؛ این صفحه VPN ایجاد نمی‌کند. / Persian landing page with a connection-interface simulation. | [symex-vpn-website](https://github.com/matinmt3/symex-vpn-website) |
+| راه‌DNS / RahDNS | ابزار وب / Web tool | TypeScript + Cloudflare Workers؛ سنجش DNS-over-HTTPS و ساخت پروفایل آیفون؛ سنجهٔ پینگ بازی نیست. / DoH benchmark and iPhone DNS-profile generator. | [rahdns](https://github.com/matinmt3/rahdns) |
+| اسم و فامیل دونفره / Revmamad Name Game | بازی وب / Web game | Node.js + Express + Socket.IO؛ اتاق دعوت، دورها و امتیازدهی پایه؛ اجرا به سرور WebSocket نیاز دارد. / Two-player rooms and basic scoring; requires a Node/WebSocket backend. | [revmamad-name-game](https://github.com/matinmt3/revmamad-name-game) |
+
+
+## اجرا و ارزیابی | Running and reviewing
+
+راهنمای اجرا، محدودهٔ امکانات و نتیجهٔ بررسی‌ها در README هر مخزن آمده است. وجود سورس در GitHub به معنی راه‌اندازی عمومی سرویس نیست. پروژه‌های دارای Python، Express یا Cloudflare Workers برای امکانات سرور به محیط اجرای مربوط نیاز دارند؛ GitHub Pages فقط بخش‌های استاتیک را میزبانی می‌کند.
+
+Each repository documents its run commands, implemented features and validation limits. A GitHub source repository is distinct from a deployed service. Python, Express and Cloudflare Workers projects need their corresponding backend runtime; GitHub Pages serves static content.
+
+در پروژه‌های درمانی داده‌های نمونه به‌کار رفته‌اند. پرداخت، ارسال واقعی پیامک/ایمیل و خدمات پزشکی عملیاتی از این دموها استنباط نمی‌شود. در بازی اسم و فامیل، اتاق‌ها در حافظهٔ سرورند و امتیازدهی پایه جای اعتبارسنجی معنایی واژه‌ها یا سامانهٔ ضدتقلب نیست.
+
+Healthcare demos use synthetic data and do not establish operational medical, payment, SMS or email services. Name-game rooms are stored in server memory; basic scoring is not semantic dictionary validation or an anti-cheat system.
+
+## پنل‌ها و ابزارهای همراه | Admin panels and companion tools
+
+این ابزارها نیز نمونه‌کار مستقل‌اند. مخزن‌های موجود ClearGuard و Revmamad حفظ شده‌اند؛ دامنه و نتیجهٔ آزمون فعلی هر ابزار در README و گزارش اعتبارسنجی همان مخزن آمده است.
+
+Existing ClearGuard and Revmamad repositories retain their history. Each tool documents its run commands, current validation evidence and limits.
+
+| پروژه / Project | فناوری و محدوده / Stack and scope | مخزن / Repository |
 | --- | --- | --- |
-| آرتمیس — پیش‌نمونهٔ رابط پذیرش دندان‌پزشکی / Artemis Dental Reception UI | Persian RTL dental reception UI prototype with React, editable payment rows and in-memory totals. No backend or persistent patient records. | [artemis-dental-demo](https://github.com/matinmt3/artemis-dental-demo) |
-| آتلیه — استودیوی مفهومی طراحی / Atelier Studio | Persian RTL creative-studio concept website with responsive typography, service sections and local assets. A portfolio demonstration, not a real client commission. | [atelier-studio-demo](https://github.com/matinmt3/atelier-studio-demo) |
-| آویدا — مطب دندان‌پزشکی با React / Avida Clinic React | Persian RTL dental-clinic portfolio application with React SSR, Express, SQLite, booking, private conversations and role-based administration. Synthetic demo data. | [avida-clinic-react](https://github.com/matinmt3/avida-clinic-react) |
-| آویدا — مطب دندان‌پزشکی با Python / Avida Dental Clinic Python | Persian RTL clinic demo using Python stdlib and SQLite: appointment availability, patient accounts, consultation threads and administration, with local fonts and synthetic data. | [avida-dental-clinic-python](https://github.com/matinmt3/avida-dental-clinic-python) |
-| لومن — فروشگاه مفهومی آثار دیجیتال / Lumen Store | Persian RTL digital-art concept store with a local demo basket, item quantities and an accessible cart dialog. No payments or real orders. | [lumen-store-demo](https://github.com/matinmt3/lumen-store-demo) |
-| محمد متین خوارزمی — پورتفولیوی طراحی و توسعهٔ وب / Matin Kharazmi Portfolio | Persian RTL web-design portfolio with local fonts, independent case studies, conceptual demos, a personal project preview and a local browser content editor. | [matin-kharazmi-portfolio](https://github.com/matinmt3/matin-kharazmi-portfolio) |
-| مِتریک — داشبورد مفهومی داده / Metric Dashboard | Persian RTL dashboard concept with sample analytics, selectable date ranges, a bar chart and project-status table. No live business or customer data. | [metric-dashboard-demo](https://github.com/matinmt3/metric-dashboard-demo) |
-| داروخانه نازی — ویترین و کاتالوگ نمایشی / Nazy Pharmacy | Persian RTL pharmacy showcase and catalog demo with React, TypeScript, Express, SQLite, 3D scenes, customer accounts and an owner panel. No dispensing or payment service. | [nazy-pharmacy](https://github.com/matinmt3/nazy-pharmacy) |
-| راه‌DNS — آزمون DNS رمزگذاری‌شده و پروفایل آیفون / RahDNS | Persian DNS-over-HTTPS benchmark and iPhone DNS-profile generator built with TypeScript and Cloudflare Workers. Measures DNS response time, not game-server ping. | [rahdns](https://github.com/matinmt3/rahdns) |
-| ستایش سلجوقی — فروشگاه مفهومی طراحی ناخن / Setayesh Nail Atelier | Persian RTL nail-art shop and studio concept with product filters, local basket, favorites, theme switching and explicit demo forms. No checkout or real bookings. | [setayesh-nail-shop](https://github.com/matinmt3/setayesh-nail-shop) |
-| SYMEX VPN — پیش‌نمایش وب‌سایت معرفی / SYMEX VPN Website | Persian RTL SYMEX VPN landing-page preview with a simulated connection interface, responsive menu, local fonts and GSAP. Retains the source public Telegram channel. | [symex-vpn-website](https://github.com/matinmt3/symex-vpn-website) |
-| Revmamad؛ ابزار و داشبورد پروکسی تلگرام / Revmamad MTProto and Proxy Toolkit | Existing Revmamad project: collect, validate, rank and export MTProto/Telegram share links and HTTP/SOCKS proxies, with interruption recovery and a local dashboard. | [proxycl](https://github.com/matinmt3/proxycl) |
-| ClearGuard — ابزار مدیریت و پاک‌سازی ویندوز / ClearGuard | Existing Windows audit and selective-cleanup utility with a C# WPF interface and safety checks. Clean source snapshot with preserved MIT attribution. | [clearguard](https://github.com/matinmt3/ClearGuard) |
-| رادار خبر — API همراه برنامه اندروید / Iran War Radar API | Node.js and TypeScript companion API for a Persian news-monitoring Android project, with SQLite, sample feeds, sessions and optional integrations. Background polling is opt-in. | [iran-war-radar-api](https://github.com/matinmt3/iran-war-radar-api) |
-| ربات خبر ایران — Cloudflare Worker / Iran News Worker | Persian Telegram news backend for Cloudflare Workers and D1, with delivery queues, deduplication, filters and optional AI adapters. Sanitized source and isolated tests. | [iran-news-worker](https://github.com/matinmt3/iran-news-worker) |
-
-راهنمای اجرا، داده‌های نمونه، نتیجهٔ بررسی‌ها و محدودیت قابلیت‌ها در README هر مخزن آمده است. مخزن سورس به معنی استقرار عمومی سرویس نیست؛ امکانات سرور به محیط اجرای خود نیاز دارند.
-
-Each repository documents run commands, synthetic data, validation evidence and scope limitations. Source publication is distinct from live hosting; backend features require their corresponding runtime.
+| مبدل گروهی VLESS و ECH / VLESS Config Converter | Python + PySide6؛ تبدیل محلی پیوندهای VLESS و تنظیم ECH؛ آزمون هسته انجام شده است. / Local conversion utility; GUI source included. | [vless-config-converter](https://github.com/matinmt3/vless-config-converter) |
+| Revmamad؛ ابزار و داشبورد پروکسی تلگرام / Revmamad MTProto and Proxy Toolkit | Python + داشبورد وب محلی؛ ارزیابی و خروجی پروکسی؛ مخزن موجود. / Existing proxy toolkit and local dashboard. | [proxycl](https://github.com/matinmt3/proxycl) |
+| پنل مدیریت و API مجوز SYMEX VPN / SYMEX VPN Admin Panel | PHP؛ مدیریت مجوز، محدودیت دستگاه و API اشتراک با دادهٔ نمایشی. / License and subscription administration source demo. | [symex-vpn-panel](https://github.com/matinmt3/symex-vpn-panel) |
+| ClearGuard — ابزار مدیریت و پاک‌سازی ویندوز / ClearGuard | C# + WPF؛ ممیزی و پاک‌سازی انتخابی ویندوز؛ مخزن موجود. / Existing Windows audit and selective-cleanup project. | [clearguard](https://github.com/matinmt3/ClearGuard) |
+| رادار خبر — API همراه برنامه اندروید / Iran War Radar API | TypeScript + Express + SQLite؛ API همراه اندروید، پایش پس‌زمینه با فعال‌سازی صریح. / Android companion API with opt-in polling. | [iran-war-radar-api](https://github.com/matinmt3/iran-war-radar-api) |
+| ربات خبر ایران — Cloudflare Worker / Iran News Worker | JavaScript + Workers + D1؛ صف خبر و بات تلگرام؛ بدون اتصال فعال سرویس. / News queue and bot backend source. | [iran-news-worker](https://github.com/matinmt3/iran-news-worker) |
