@@ -46,3 +46,21 @@ Existing ClearGuard and Revmamad repositories retain their history. Each tool do
 | ClearGuard — ابزار مدیریت و پاک‌سازی ویندوز / ClearGuard | C# + WPF؛ ممیزی و پاک‌سازی انتخابی ویندوز؛ مخزن موجود. / Existing Windows audit and selective-cleanup project. | [clearguard](https://github.com/matinmt3/ClearGuard) |
 | رادار خبر — API همراه برنامه اندروید / Iran War Radar API | TypeScript + Express + SQLite؛ API همراه اندروید، پایش پس‌زمینه با فعال‌سازی صریح. / Android companion API with opt-in polling. | [iran-war-radar-api](https://github.com/matinmt3/iran-war-radar-api) |
 | ربات خبر ایران — Cloudflare Worker / Iran News Worker | JavaScript + Workers + D1؛ صف خبر و بات تلگرام؛ بدون اتصال فعال سرویس. / News queue and bot backend source. | [iran-news-worker](https://github.com/matinmt3/iran-news-worker) |
+
+## مشاهدهٔ آنلاین | Live websites
+
+لینک‌های زیر روی HTTPS با پاسخ موفق و منابع لازم بررسی شده‌اند. سایت‌های مفهومی و رابط‌های نمایشی، سرویس عملیاتی یا سابقه مشتری تأییدشده معرفی نمی‌شوند.
+
+These static sites have verified public URLs. Backend and desktop projects still require their documented runtime.
+
+| پروژه / Project | مشاهده / Live | سورس / Source |
+| --- | --- | --- |
+| RevMaMad Resource Hub | [نمایش سایت / Open site](https://matinmt3.github.io/revmamad-resource-hub/) | [GitHub](https://github.com/matinmt3/revmamad-resource-hub) |
+| Matin Kharazmi Portfolio | [نمایش سایت / Open site](https://matinmt3.github.io/matin-kharazmi-portfolio/) | [GitHub](https://github.com/matinmt3/matin-kharazmi-portfolio) |
+| Artemis Dental Reception UI | [نمایش سایت / Open site](https://matinmt3.github.io/artemis-dental-demo/) | [GitHub](https://github.com/matinmt3/artemis-dental-demo) |
+| Atelier Studio | [نمایش سایت / Open site](https://matinmt3.github.io/atelier-studio-demo/) | [GitHub](https://github.com/matinmt3/atelier-studio-demo) |
+| Lumen Store | [نمایش سایت / Open site](https://matinmt3.github.io/lumen-store-demo/) | [GitHub](https://github.com/matinmt3/lumen-store-demo) |
+| Metric Dashboard | [نمایش سایت / Open site](https://matinmt3.github.io/metric-dashboard-demo/) | [GitHub](https://github.com/matinmt3/metric-dashboard-demo) |
+| Setayesh Nail Atelier | [نمایش سایت / Open site](https://matinmt3.github.io/setayesh-nail-shop/) | [GitHub](https://github.com/matinmt3/setayesh-nail-shop) |
+| SYMEX VPN Website | [نمایش سایت / Open site](https://matinmt3.github.io/symex-vpn-website/) | [GitHub](https://github.com/matinmt3/symex-vpn-website) |
+| VisionGuard Pro Preview | [نمایش سایت / Open site](https://matinmt3.github.io/visionguard-pro-preview/) | [GitHub](https://github.com/matinmt3/visionguard-pro-preview) |
